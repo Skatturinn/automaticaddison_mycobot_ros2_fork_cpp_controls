@@ -1,0 +1,15 @@
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/ament_index/resource_index/package_run_dependencies/mycobot_system_tests
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/ament_index/resource_index/parent_prefix_path/mycobot_system_tests
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/environment/ament_prefix_path.sh
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/environment/ament_prefix_path.dsv
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/environment/path.sh
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/environment/path.dsv
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.bash
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.sh
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.zsh
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.dsv
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/package.dsv
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/ament_index/resource_index/packages/mycobot_system_tests
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/cmake/mycobot_system_testsConfig.cmake
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/cmake/mycobot_system_testsConfig-version.cmake
+/home/notandi/ros2_ws/src/install/mycobot_system_tests/share/mycobot_system_tests/package.xml

@@ -1,0 +1,21 @@
+[0.035s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_system_tests -- -j12 -l12
+[0.092s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_system_tests -- -j12 -l12
+[0.093s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_system_tests
+[0.115s] -- Install configuration: ""
+[0.115s] -- Execute custom install script
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/ament_index/resource_index/package_run_dependencies/mycobot_system_tests
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/ament_index/resource_index/parent_prefix_path/mycobot_system_tests
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/environment/ament_prefix_path.sh
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/environment/ament_prefix_path.dsv
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/environment/path.sh
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/environment/path.dsv
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.bash
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.sh
+[0.115s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.zsh
+[0.116s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.dsv
+[0.116s] -- Symlinking: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.dsv
+[0.120s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/ament_index/resource_index/packages/mycobot_system_tests
+[0.121s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/cmake/mycobot_system_testsConfig.cmake
+[0.121s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/cmake/mycobot_system_testsConfig-version.cmake
+[0.121s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.xml
+[0.237s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_system_tests

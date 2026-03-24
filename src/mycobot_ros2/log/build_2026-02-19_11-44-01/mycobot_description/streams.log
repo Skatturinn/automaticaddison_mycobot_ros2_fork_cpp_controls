@@ -1,0 +1,96 @@
+[0.018s] Invoking command in '/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description
+[0.275s] -- The C compiler identification is GNU 13.3.0
+[0.866s] -- The CXX compiler identification is GNU 13.3.0
+[1.393s] -- Detecting C compiler ABI info
+[1.633s] -- Detecting C compiler ABI info - done
+[1.639s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.640s] -- Detecting C compile features
+[1.640s] -- Detecting C compile features - done
+[1.755s] -- Detecting CXX compiler ABI info
+[2.028s] -- Detecting CXX compiler ABI info - done
+[2.035s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.035s] -- Detecting CXX compile features
+[2.035s] -- Detecting CXX compile features - done
+[2.038s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.164s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.271s] -- Found urdf_tutorial: 1.1.0 (/opt/ros/jazzy/share/urdf_tutorial/cmake)
+[2.273s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.364s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.365s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.366s] -- Added test 'lint_cmake' to check CMake code style
+[2.366s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.369s] -- Added test 'xmllint' to check XML markup files
+[2.370s] -- Configuring done (2.3s)
+[2.374s] -- Generating done (0.0s)
+[2.375s] -- Build files have been written to: /home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description
+[2.378s] Invoked command in '/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description
+[2.379s] Invoking command in '/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description -- -j12 -l12
+[2.410s] Invoked command in '/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description -- -j12 -l12
+[2.410s] Invoking command in '/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description
+[2.417s] -- Install configuration: ""
+[2.417s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/launch
+[2.417s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/launch/robot_state_publisher.launch.py
+[2.418s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes
+[2.418s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280
+[2.418s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual
+[2.419s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link6.png
+[2.420s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link3.png
+[2.420s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link7.dae
+[2.423s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link6.dae
+[2.425s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link4.dae
+[2.427s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link5.png
+[2.427s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link2.dae
+[2.431s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link1.dae
+[2.440s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/suit_env.dae
+[2.454s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link5.dae
+[2.459s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link4.png
+[2.459s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link7.png
+[2.459s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link2.png
+[2.460s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link1.png
+[2.460s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual/link3.dae
+[2.466s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0
+[2.466s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual
+[2.466s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual/base_link.dae
+[2.476s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper
+[2.477s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual
+[2.477s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual/gripper_right3.dae
+[2.478s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual/gripper_left1.dae
+[2.479s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual/gripper_base.dae
+[2.483s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual/gripper_left2.dae
+[2.485s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual/gripper_right2.dae
+[2.487s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual/gripper_left3.dae
+[2.489s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual/gripper_right1.dae
+[2.490s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/d435
+[2.491s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/d435/visual
+[2.491s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/meshes/d435/visual/d435.stl
+[2.506s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf
+[2.506s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/mycobot280_rviz.png
+[2.507s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/robots
+[2.507s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/robots/mycobot_280.urdf.xacro
+[2.508s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/control
+[2.508s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/control/mycobot_280_ros2_control.urdf.xacro
+[2.508s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/control/gazebo_sim_ros2_control.urdf.xacro
+[2.508s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/mech
+[2.509s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/mech/g_shape_base_v2_0.urdf.xacro
+[2.509s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/mech/adaptive_gripper.urdf.xacro
+[2.509s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/mech/mycobot_280_arm.urdf.xacro
+[2.509s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/sensors
+[2.510s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/urdf/sensors/intel_rgbd_cam_d435.urdf.xacro
+[2.510s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/rviz
+[2.510s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/rviz/mycobot_280_description.rviz
+[2.511s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/ament_index/resource_index/package_run_dependencies/mycobot_description
+[2.511s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/ament_index/resource_index/parent_prefix_path/mycobot_description
+[2.511s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/environment/ament_prefix_path.sh
+[2.511s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/environment/ament_prefix_path.dsv
+[2.511s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/environment/path.sh
+[2.511s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/environment/path.dsv
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/local_setup.bash
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/local_setup.sh
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/local_setup.zsh
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/local_setup.dsv
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/package.dsv
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/ament_index/resource_index/packages/mycobot_description
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/cmake/mycobot_descriptionConfig.cmake
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/cmake/mycobot_descriptionConfig-version.cmake
+[2.512s] -- Installing: /home/notandi/ros2_ws/src/mycobot_ros2/install/mycobot_description/share/mycobot_description/package.xml
+[2.514s] Invoked command in '/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_description

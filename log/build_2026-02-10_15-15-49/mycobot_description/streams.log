@@ -1,0 +1,42 @@
+[0.041s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/install/mycobot_description
+[0.574s] -- The C compiler identification is GNU 13.3.0
+[1.878s] -- The CXX compiler identification is GNU 13.3.0
+[2.848s] -- Detecting C compiler ABI info
+[3.284s] -- Detecting C compiler ABI info - done
+[3.297s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.298s] -- Detecting C compile features
+[3.299s] -- Detecting C compile features - done
+[3.473s] -- Detecting CXX compiler ABI info
+[3.954s] -- Detecting CXX compiler ABI info - done
+[3.968s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.969s] -- Detecting CXX compile features
+[3.969s] -- Detecting CXX compile features - done
+[3.981s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.238s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.426s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.634s] -- Added test 'lint_cmake' to check CMake code style
+[4.636s] -- Added test 'xmllint' to check XML markup files
+[4.640s] -- Configuring done (4.5s)
+[4.648s] -- Generating done (0.0s)
+[4.653s] -- Build files have been written to: /home/notandi/ros2_ws/build/mycobot_description
+[4.661s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/install/mycobot_description
+[4.663s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_description -- -j12 -l12
+[4.737s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_description -- -j12 -l12
+[4.740s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_description
+[4.754s] -- Install configuration: ""
+[4.757s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/ament_index/resource_index/package_run_dependencies/mycobot_description
+[4.759s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/ament_index/resource_index/parent_prefix_path/mycobot_description
+[4.760s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/environment/ament_prefix_path.sh
+[4.761s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/environment/ament_prefix_path.dsv
+[4.761s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/environment/path.sh
+[4.762s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/environment/path.dsv
+[4.762s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/local_setup.bash
+[4.763s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/local_setup.sh
+[4.763s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/local_setup.zsh
+[4.765s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/local_setup.dsv
+[4.765s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.dsv
+[4.766s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/ament_index/resource_index/packages/mycobot_description
+[4.767s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/cmake/mycobot_descriptionConfig.cmake
+[4.767s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/cmake/mycobot_descriptionConfig-version.cmake
+[4.767s] -- Installing: /home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.xml
+[4.771s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_description

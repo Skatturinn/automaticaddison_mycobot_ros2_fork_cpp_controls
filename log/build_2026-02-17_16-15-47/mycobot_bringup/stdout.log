@@ -1,0 +1,26 @@
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/notandi/ros2_ws/build/mycobot_bringup
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/scripts/mycobot_280_gazebo.sh
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/ament_index/resource_index/package_run_dependencies/mycobot_bringup
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/ament_index/resource_index/parent_prefix_path/mycobot_bringup
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/environment/path.sh
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/environment/path.dsv
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/local_setup.bash
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/local_setup.sh
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/local_setup.zsh
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/local_setup.dsv
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.dsv
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/ament_index/resource_index/packages/mycobot_bringup
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/cmake/mycobot_bringupConfig.cmake
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/cmake/mycobot_bringupConfig-version.cmake
+-- Symlinking: /home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.xml

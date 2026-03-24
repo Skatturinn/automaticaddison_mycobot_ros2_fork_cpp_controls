@@ -1,0 +1,4 @@
+Invoking command in '/home/notandi/ros2_ws/build/mycobot_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_system_tests -- -j12 -l12
+Invoked command in '/home/notandi/ros2_ws/build/mycobot_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_system_tests -- -j12 -l12
+Invoking command in '/home/notandi/ros2_ws/build/mycobot_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_system_tests
+Invoked command in '/home/notandi/ros2_ws/build/mycobot_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_system_tests

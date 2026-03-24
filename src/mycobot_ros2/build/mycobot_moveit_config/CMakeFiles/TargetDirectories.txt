@@ -1,0 +1,9 @@
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/uninstall.dir
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/mycobot_moveit_config_uninstall.dir
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/test.dir
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/edit_cache.dir
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/rebuild_cache.dir
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/list_install_components.dir
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/install.dir
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/install/local.dir
+/home/notandi/ros2_ws/src/mycobot_ros2/build/mycobot_moveit_config/CMakeFiles/install/strip.dir

@@ -1,0 +1,44 @@
+[0.043s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_gazebo -- -j12 -l12
+[0.161s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.664s] -- Found controller_manager: 4.42.2 (/opt/ros/jazzy/share/controller_manager/cmake)
+[1.090s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.124s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.176s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.239s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.448s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.455s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.626s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.894s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.051s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.600s] -- Found gripper_controllers: 4.36.0 (/opt/ros/jazzy/share/gripper_controllers/cmake)
+[3.764s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[3.768s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.768s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.006s] -- Found ros2_control: 4.42.2 (/opt/ros/jazzy/share/ros2_control/cmake)
+[4.009s] -- Found ros2_controllers: 4.36.0 (/opt/ros/jazzy/share/ros2_controllers/cmake)
+[4.015s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[4.017s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.223s] -- Added test 'lint_cmake' to check CMake code style
+[4.225s] -- Added test 'xmllint' to check XML markup files
+[4.229s] -- Configuring done (4.1s)
+[4.248s] -- Generating done (0.0s)
+[4.256s] -- Build files have been written to: /home/notandi/ros2_ws/build/mycobot_gazebo
+[4.302s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_gazebo -- -j12 -l12
+[4.305s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_gazebo
+[4.319s] -- Install configuration: ""
+[4.319s] -- Installing: /home/notandi/ros2_ws/install/mycobot_gazebo/share/ament_index/resource_index/package_run_dependencies/mycobot_gazebo
+[4.319s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/ament_index/resource_index/parent_prefix_path/mycobot_gazebo
+[4.320s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/ament_prefix_path.sh
+[4.321s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/ament_prefix_path.dsv
+[4.321s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/path.sh
+[4.321s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/path.dsv
+[4.321s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/local_setup.bash
+[4.322s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/local_setup.sh
+[4.322s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/local_setup.zsh
+[4.322s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/local_setup.dsv
+[4.322s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.dsv
+[4.322s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/ament_index/resource_index/packages/mycobot_gazebo
+[4.322s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/cmake/mycobot_gazeboConfig.cmake
+[4.322s] -- Up-to-date: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/cmake/mycobot_gazeboConfig-version.cmake
+[4.322s] -- Installing: /home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.xml
+[4.326s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_gazebo

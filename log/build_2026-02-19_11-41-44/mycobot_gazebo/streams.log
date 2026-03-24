@@ -1,0 +1,26 @@
+[0.020s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_gazebo -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/install/mycobot_gazebo
+[0.035s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.231s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.238s] -- Found controller_manager: 4.42.2 (/opt/ros/jazzy/share/controller_manager/cmake)
+[0.469s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.477s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.490s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.504s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.565s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.567s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.743s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.201s] -- Found gripper_controllers: 4.36.0 (/opt/ros/jazzy/share/gripper_controllers/cmake)
+[1.231s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.232s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.317s] -- Found ros2_control: 4.42.2 (/opt/ros/jazzy/share/ros2_control/cmake)
+[1.318s] -- Found ros2_controllers: 4.36.0 (/opt/ros/jazzy/share/ros2_controllers/cmake)
+[1.319s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[1.319s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.414s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.414s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.418s] -- Added test 'lint_cmake' to check CMake code style
+[1.421s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.442s] -- Added test 'xmllint' to check XML markup files
+[1.444s] -- Configuring done (1.4s)
+[1.454s] -- Generating done (0.0s)
+[1.457s] -- Build files have been written to: /home/notandi/ros2_ws/build/mycobot_gazebo

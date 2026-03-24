@@ -1,0 +1,1 @@
+/home/notandi/ros2_ws/build/mycobot_bringup/ament_cmake_core/mycobot_bringupConfig-version.cmake

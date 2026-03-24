@@ -1,0 +1,1 @@
+/home/notandi/ros2_ws/build/mycobot_ros2/ament_cmake_environment_hooks/local_setup.zsh

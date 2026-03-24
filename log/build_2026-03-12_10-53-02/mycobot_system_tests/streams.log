@@ -1,0 +1,57 @@
+[0.060s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_system_tests -- -j12 -l12
+[0.219s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.666s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.711s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.170s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.209s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.266s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.325s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.553s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.562s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.643s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.623s] -- Found rclcpp_action: 28.1.16 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[3.775s] -- Found control_msgs: 5.7.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[4.115s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.360s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.360s] -- Configured cppcheck include dirs: 
+[4.361s] -- Configured cppcheck exclude dirs and/or files: 
+[4.362s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.362s] -- Configured 'flake8' exclude dirs and/or files: 
+[4.364s] -- Added test 'lint_cmake' to check CMake code style
+[4.365s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.368s] -- Added test 'uncrustify' to check C / C++ code style
+[4.368s] -- Configured uncrustify additional arguments: 
+[4.369s] -- Added test 'xmllint' to check XML markup files
+[4.380s] -- Configuring done (4.2s)
+[4.462s] -- Generating done (0.1s)
+[4.481s] -- Build files have been written to: /home/notandi/ros2_ws/build/mycobot_system_tests
+[4.559s] [ 25%] [32mBuilding CXX object CMakeFiles/260309_in_out_demo.dir/src/260309_in_out_demo.cpp.o[0m
+[4.574s] [ 75%] Built target arm_gripper_loop_controller
+[23.053s] [100%] [32m[1mLinking CXX executable 260309_in_out_demo[0m
+[24.654s] [100%] Built target 260309_in_out_demo
+[24.685s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_system_tests -- -j12 -l12
+[24.689s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_system_tests
+[24.711s] -- Install configuration: ""
+[24.712s] -- Execute custom install script
+[24.714s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/scripts/arm_gripper_loop_controller.py
+[24.715s] -- Symlinking: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/src/260309_in_out_demo.cpp
+[24.733s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/src/arm_gripper_loop_controller.cpp
+[24.734s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/lib/mycobot_system_tests/arm_gripper_loop_controller
+[24.735s] -- Symlinking: /home/notandi/ros2_ws/install/mycobot_system_tests/lib/mycobot_system_tests/260309_in_out_demo
+[24.758s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/lib/mycobot_system_tests/arm_gripper_loop_controller.py
+[24.759s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/ament_index/resource_index/package_run_dependencies/mycobot_system_tests
+[24.761s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/ament_index/resource_index/parent_prefix_path/mycobot_system_tests
+[24.762s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/environment/ament_prefix_path.sh
+[24.763s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/environment/ament_prefix_path.dsv
+[24.764s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/environment/path.sh
+[24.765s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/environment/path.dsv
+[24.766s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.bash
+[24.767s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.sh
+[24.769s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.zsh
+[24.772s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/local_setup.dsv
+[24.772s] -- Symlinking: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.dsv
+[24.800s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/ament_index/resource_index/packages/mycobot_system_tests
+[24.802s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/cmake/mycobot_system_testsConfig.cmake
+[24.803s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/cmake/mycobot_system_testsConfig-version.cmake
+[24.804s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.xml
+[24.813s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_system_tests

@@ -1,0 +1,8 @@
+[01m[K/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_system_tests/src/260309_in_out_demo.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+    7 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/260309_in_out_demo.dir/build.make:76: CMakeFiles/260309_in_out_demo.dir/src/260309_in_out_demo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/260309_in_out_demo.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

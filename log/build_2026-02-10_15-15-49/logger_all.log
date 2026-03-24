@@ -1,0 +1,466 @@
+[0.420s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.420s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ecc8978de50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ecc8978d640>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ecc8978d640>>, mixin_verb=('build',))
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.513s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/notandi/ros2_ws'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extension 'ignore'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extension 'ignore_ament_install'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extensions ['colcon_pkg']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extension 'colcon_pkg'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extensions ['colcon_meta']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extension 'colcon_meta'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extensions ['ros']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extension 'ros'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extensions ['cmake', 'python']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extension 'cmake'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extension 'python'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extensions ['python_setup_py']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2) by extension 'python_setup_py'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extension 'ignore'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extension 'ignore_ament_install'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extensions ['colcon_pkg']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extension 'colcon_pkg'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extensions ['colcon_meta']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extension 'colcon_meta'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extensions ['ros']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_bringup) by extension 'ros'
+[0.580s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mycobot_ros2/mycobot_bringup' with type 'ros.ament_cmake' and name 'mycobot_bringup'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extension 'ignore'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extension 'ignore_ament_install'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extensions ['colcon_pkg']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extension 'colcon_pkg'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extensions ['colcon_meta']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extension 'colcon_meta'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extensions ['ros']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_description) by extension 'ros'
+[0.583s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mycobot_ros2/mycobot_description' with type 'ros.ament_cmake' and name 'mycobot_description'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extension 'ignore_ament_install'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extensions ['colcon_pkg']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extension 'colcon_pkg'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extensions ['colcon_meta']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extension 'colcon_meta'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extensions ['ros']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_gazebo) by extension 'ros'
+[0.586s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mycobot_ros2/mycobot_gazebo' with type 'ros.ament_cmake' and name 'mycobot_gazebo'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extension 'ignore'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extension 'ignore_ament_install'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extensions ['colcon_pkg']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extension 'colcon_pkg'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extensions ['colcon_meta']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extension 'colcon_meta'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extensions ['ros']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_moveit_config) by extension 'ros'
+[0.588s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mycobot_ros2/mycobot_moveit_config' with type 'ros.ament_cmake' and name 'mycobot_moveit_config'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extension 'ignore'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extension 'ignore_ament_install'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extensions ['colcon_pkg']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extension 'colcon_pkg'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extensions ['colcon_meta']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extension 'colcon_meta'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extensions ['ros']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_ros2) by extension 'ros'
+[0.589s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mycobot_ros2/mycobot_ros2' with type 'ros.ament_cmake' and name 'mycobot_ros2'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extension 'ignore'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extension 'ignore_ament_install'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extensions ['colcon_pkg']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extension 'colcon_pkg'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extensions ['colcon_meta']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extension 'colcon_meta'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extensions ['ros']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/mycobot_ros2/mycobot_system_tests) by extension 'ros'
+[0.591s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mycobot_ros2/mycobot_system_tests' with type 'ros.ament_cmake' and name 'mycobot_system_tests'
+[0.591s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.591s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.591s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.591s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.591s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.639s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 374 installed packages in /opt/ros/jazzy
+[0.641s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.805s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/notandi/ros2_ws/build/mycobot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/notandi/ros2_ws/install/mycobot_bringup', 'merge_install': False, 'path': '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'cmake_target' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'mycobot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.805s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/notandi/ros2_ws/build/mycobot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/notandi/ros2_ws/install/mycobot_description', 'merge_install': False, 'path': '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description', 'symlink_install': False, 'test_result_base': None}
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.806s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/notandi/ros2_ws/build/mycobot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/notandi/ros2_ws/install/mycobot_gazebo', 'merge_install': False, 'path': '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'mycobot_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.806s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/notandi/ros2_ws/build/mycobot_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/notandi/ros2_ws/install/mycobot_moveit_config', 'merge_install': False, 'path': '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'cmake_target' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_system_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.807s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_system_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/notandi/ros2_ws/build/mycobot_system_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/notandi/ros2_ws/install/mycobot_system_tests', 'merge_install': False, 'path': '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_system_tests', 'symlink_install': False, 'test_result_base': None}
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'cmake_target' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mycobot_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.807s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/notandi/ros2_ws/build/mycobot_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/notandi/ros2_ws/install/mycobot_ros2', 'merge_install': False, 'path': '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.807s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.810s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.810s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_bringup' with build type 'ament_cmake'
+[0.811s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_bringup'
+[0.820s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.820s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.820s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.827s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description' with build type 'ament_cmake'
+[0.827s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description'
+[0.828s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.828s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.835s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_gazebo' with build type 'ament_cmake'
+[0.835s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_gazebo'
+[0.835s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.835s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.840s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_moveit_config' with build type 'ament_cmake'
+[0.840s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_moveit_config'
+[0.840s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.840s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.846s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_system_tests' with build type 'ament_cmake'
+[0.847s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_system_tests'
+[0.847s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.847s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_bringup -- -j12 -l12
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/install/mycobot_description
+[0.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_gazebo -- -j12 -l12
+[0.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_moveit_config -- -j12 -l12
+[0.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_system_tests -- -j12 -l12
+[1.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_moveit_config -- -j12 -l12
+[1.034s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_moveit_config
+[1.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_bringup -- -j12 -l12
+[1.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_bringup
+[1.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_system_tests -- -j12 -l12
+[1.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_system_tests
+[1.069s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_moveit_config)
+[1.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_moveit_config
+[1.090s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config' for CMake module files
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config' for CMake config files
+[1.095s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_moveit_config', 'cmake_prefix_path')
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/hook/cmake_prefix_path.ps1'
+[1.097s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/hook/cmake_prefix_path.dsv'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/hook/cmake_prefix_path.sh'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config/bin'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config/lib/pkgconfig/mycobot_moveit_config.pc'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config/lib/python3.12/site-packages'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config/bin'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.ps1'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.dsv'
+[1.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.sh'
+[1.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.bash'
+[1.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.zsh'
+[1.112s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_moveit_config/share/colcon-core/packages/mycobot_moveit_config)
+[1.112s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_moveit_config)
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config' for CMake module files
+[1.114s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config' for CMake config files
+[1.114s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_moveit_config', 'cmake_prefix_path')
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/hook/cmake_prefix_path.ps1'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/hook/cmake_prefix_path.dsv'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/hook/cmake_prefix_path.sh'
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config/bin'
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config/lib/pkgconfig/mycobot_moveit_config.pc'
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config/lib/python3.12/site-packages'
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_moveit_config/bin'
+[1.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.ps1'
+[1.118s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.dsv'
+[1.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.sh'
+[1.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.bash'
+[1.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.zsh'
+[1.121s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_moveit_config/share/colcon-core/packages/mycobot_moveit_config)
+[1.125s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_bringup)
+[1.126s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup' for CMake module files
+[1.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_bringup
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup' for CMake config files
+[1.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_bringup', 'cmake_prefix_path')
+[1.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/hook/cmake_prefix_path.ps1'
+[1.136s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/hook/cmake_prefix_path.dsv'
+[1.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/hook/cmake_prefix_path.sh'
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup/bin'
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup/lib/pkgconfig/mycobot_bringup.pc'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup/lib/python3.12/site-packages'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup/bin'
+[1.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.ps1'
+[1.140s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.dsv'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.sh'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.bash'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.zsh'
+[1.142s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_bringup/share/colcon-core/packages/mycobot_bringup)
+[1.143s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_bringup)
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup' for CMake module files
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup' for CMake config files
+[1.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_bringup', 'cmake_prefix_path')
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/hook/cmake_prefix_path.ps1'
+[1.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/hook/cmake_prefix_path.dsv'
+[1.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/hook/cmake_prefix_path.sh'
+[1.147s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup/bin'
+[1.147s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup/lib/pkgconfig/mycobot_bringup.pc'
+[1.147s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup/lib/python3.12/site-packages'
+[1.148s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_bringup/bin'
+[1.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.ps1'
+[1.149s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.dsv'
+[1.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.sh'
+[1.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.bash'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_bringup/share/mycobot_bringup/package.zsh'
+[1.151s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_bringup/share/colcon-core/packages/mycobot_bringup)
+[1.152s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_system_tests)
+[1.153s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests' for CMake module files
+[1.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_system_tests
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests' for CMake config files
+[1.160s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_system_tests', 'cmake_prefix_path')
+[1.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/hook/cmake_prefix_path.ps1'
+[1.161s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/hook/cmake_prefix_path.dsv'
+[1.162s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/hook/cmake_prefix_path.sh'
+[1.163s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests/bin'
+[1.163s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests/lib/pkgconfig/mycobot_system_tests.pc'
+[1.163s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests/lib/python3.12/site-packages'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests/bin'
+[1.164s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.ps1'
+[1.165s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.dsv'
+[1.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.sh'
+[1.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.bash'
+[1.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.zsh'
+[1.167s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_system_tests/share/colcon-core/packages/mycobot_system_tests)
+[1.168s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_system_tests)
+[1.168s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests' for CMake module files
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests' for CMake config files
+[1.169s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_system_tests', 'cmake_prefix_path')
+[1.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/hook/cmake_prefix_path.ps1'
+[1.170s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/hook/cmake_prefix_path.dsv'
+[1.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/hook/cmake_prefix_path.sh'
+[1.171s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests/bin'
+[1.172s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests/lib/pkgconfig/mycobot_system_tests.pc'
+[1.172s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests/lib/python3.12/site-packages'
+[1.172s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_system_tests/bin'
+[1.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.ps1'
+[1.174s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.dsv'
+[1.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.sh'
+[1.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.bash'
+[1.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_system_tests/share/mycobot_system_tests/package.zsh'
+[1.178s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_system_tests/share/colcon-core/packages/mycobot_system_tests)
+[5.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_gazebo -- -j12 -l12
+[5.140s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_gazebo
+[5.160s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_gazebo)
+[5.161s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo' for CMake module files
+[5.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_gazebo
+[5.163s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo' for CMake config files
+[5.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_gazebo', 'cmake_prefix_path')
+[5.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/hook/cmake_prefix_path.ps1'
+[5.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/hook/cmake_prefix_path.dsv'
+[5.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/hook/cmake_prefix_path.sh'
+[5.168s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo/bin'
+[5.168s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo/lib/pkgconfig/mycobot_gazebo.pc'
+[5.169s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo/lib/python3.12/site-packages'
+[5.169s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo/bin'
+[5.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.ps1'
+[5.171s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.dsv'
+[5.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.sh'
+[5.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.bash'
+[5.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.zsh'
+[5.173s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_gazebo/share/colcon-core/packages/mycobot_gazebo)
+[5.173s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_gazebo)
+[5.174s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo' for CMake module files
+[5.174s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo' for CMake config files
+[5.174s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_gazebo', 'cmake_prefix_path')
+[5.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/hook/cmake_prefix_path.ps1'
+[5.175s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/hook/cmake_prefix_path.dsv'
+[5.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/hook/cmake_prefix_path.sh'
+[5.177s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo/bin'
+[5.177s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo/lib/pkgconfig/mycobot_gazebo.pc'
+[5.178s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo/lib/python3.12/site-packages'
+[5.179s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_gazebo/bin'
+[5.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.ps1'
+[5.180s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.dsv'
+[5.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.sh'
+[5.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.bash'
+[5.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.zsh'
+[5.184s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_gazebo/share/colcon-core/packages/mycobot_gazebo)
+[5.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_description -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/install/mycobot_description
+[5.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_description -- -j12 -l12
+[5.565s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_description -- -j12 -l12
+[5.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_description
+[5.599s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_description)
+[5.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_description
+[5.600s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description' for CMake module files
+[5.601s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description' for CMake config files
+[5.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_description', 'cmake_prefix_path')
+[5.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/hook/cmake_prefix_path.ps1'
+[5.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/hook/cmake_prefix_path.dsv'
+[5.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/hook/cmake_prefix_path.sh'
+[5.605s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description/bin'
+[5.605s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description/lib/pkgconfig/mycobot_description.pc'
+[5.605s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description/lib/python3.12/site-packages'
+[5.606s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description/bin'
+[5.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.ps1'
+[5.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.dsv'
+[5.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.sh'
+[5.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.bash'
+[5.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.zsh'
+[5.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_description/share/colcon-core/packages/mycobot_description)
+[5.611s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_description)
+[5.612s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description' for CMake module files
+[5.612s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description' for CMake config files
+[5.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_description', 'cmake_prefix_path')
+[5.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/hook/cmake_prefix_path.ps1'
+[5.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/hook/cmake_prefix_path.dsv'
+[5.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/hook/cmake_prefix_path.sh'
+[5.616s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description/bin'
+[5.616s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description/lib/pkgconfig/mycobot_description.pc'
+[5.616s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description/lib/python3.12/site-packages'
+[5.616s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_description/bin'
+[5.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.ps1'
+[5.618s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.dsv'
+[5.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.sh'
+[5.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.bash'
+[5.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_description/share/mycobot_description/package.zsh'
+[5.622s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_description/share/colcon-core/packages/mycobot_description)
+[5.623s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_ros2' with build type 'ament_cmake'
+[5.623s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/notandi/ros2_ws/src/mycobot_ros2/mycobot_ros2'
+[5.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_ros2': AMENT_PREFIX_PATH=/home/notandi/ros2_ws/install/mycobot_system_tests:/home/notandi/ros2_ws/install/mycobot_moveit_config:/home/notandi/ros2_ws/install/mycobot_gazebo:/home/notandi/ros2_ws/install/mycobot_description:/home/notandi/ros2_ws/install/mycobot_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/notandi/ros2_ws/install/mycobot_system_tests:/home/notandi/ros2_ws/install/mycobot_moveit_config:/home/notandi/ros2_ws/install/mycobot_gazebo:/home/notandi/ros2_ws/install/mycobot_description:/home/notandi/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_ros2 -- -j12 -l12
+[6.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_ros2' returned '0': AMENT_PREFIX_PATH=/home/notandi/ros2_ws/install/mycobot_system_tests:/home/notandi/ros2_ws/install/mycobot_moveit_config:/home/notandi/ros2_ws/install/mycobot_gazebo:/home/notandi/ros2_ws/install/mycobot_description:/home/notandi/ros2_ws/install/mycobot_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/notandi/ros2_ws/install/mycobot_system_tests:/home/notandi/ros2_ws/install/mycobot_moveit_config:/home/notandi/ros2_ws/install/mycobot_gazebo:/home/notandi/ros2_ws/install/mycobot_description:/home/notandi/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_ros2 -- -j12 -l12
+[6.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/notandi/ros2_ws/build/mycobot_ros2': AMENT_PREFIX_PATH=/home/notandi/ros2_ws/install/mycobot_system_tests:/home/notandi/ros2_ws/install/mycobot_moveit_config:/home/notandi/ros2_ws/install/mycobot_gazebo:/home/notandi/ros2_ws/install/mycobot_description:/home/notandi/ros2_ws/install/mycobot_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/notandi/ros2_ws/install/mycobot_system_tests:/home/notandi/ros2_ws/install/mycobot_moveit_config:/home/notandi/ros2_ws/install/mycobot_gazebo:/home/notandi/ros2_ws/install/mycobot_description:/home/notandi/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_ros2
+[6.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_ros2)
+[6.750s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2' for CMake module files
+[6.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/notandi/ros2_ws/build/mycobot_ros2' returned '0': AMENT_PREFIX_PATH=/home/notandi/ros2_ws/install/mycobot_system_tests:/home/notandi/ros2_ws/install/mycobot_moveit_config:/home/notandi/ros2_ws/install/mycobot_gazebo:/home/notandi/ros2_ws/install/mycobot_description:/home/notandi/ros2_ws/install/mycobot_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/notandi/ros2_ws/install/mycobot_system_tests:/home/notandi/ros2_ws/install/mycobot_moveit_config:/home/notandi/ros2_ws/install/mycobot_gazebo:/home/notandi/ros2_ws/install/mycobot_description:/home/notandi/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_ros2
+[6.752s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2' for CMake config files
+[6.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_ros2', 'cmake_prefix_path')
+[6.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/hook/cmake_prefix_path.ps1'
+[6.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/hook/cmake_prefix_path.dsv'
+[6.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/hook/cmake_prefix_path.sh'
+[6.757s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2/bin'
+[6.757s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2/lib/pkgconfig/mycobot_ros2.pc'
+[6.758s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2/lib/python3.12/site-packages'
+[6.758s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2/bin'
+[6.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.ps1'
+[6.759s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.dsv'
+[6.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.sh'
+[6.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.bash'
+[6.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.zsh'
+[6.761s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_ros2/share/colcon-core/packages/mycobot_ros2)
+[6.761s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_ros2)
+[6.762s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2' for CMake module files
+[6.762s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2' for CMake config files
+[6.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_ros2', 'cmake_prefix_path')
+[6.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/hook/cmake_prefix_path.ps1'
+[6.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/hook/cmake_prefix_path.dsv'
+[6.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/hook/cmake_prefix_path.sh'
+[6.764s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2/bin'
+[6.764s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2/lib/pkgconfig/mycobot_ros2.pc'
+[6.765s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2/lib/python3.12/site-packages'
+[6.765s] Level 1:colcon.colcon_core.environment:checking '/home/notandi/ros2_ws/install/mycobot_ros2/bin'
+[6.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.ps1'
+[6.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.dsv'
+[6.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.sh'
+[6.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.bash'
+[6.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/notandi/ros2_ws/install/mycobot_ros2/share/mycobot_ros2/package.zsh'
+[6.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/notandi/ros2_ws/install/mycobot_ros2/share/colcon-core/packages/mycobot_ros2)
+[6.769s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.770s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.770s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.771s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.870s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.870s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.870s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.870s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.876s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[6.876s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.877s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/notandi/ros2_ws/install/local_setup.ps1'
+[6.878s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/notandi/ros2_ws/install/_local_setup_util_ps1.py'
+[6.880s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/notandi/ros2_ws/install/setup.ps1'
+[6.882s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/notandi/ros2_ws/install/local_setup.sh'
+[6.883s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/notandi/ros2_ws/install/_local_setup_util_sh.py'
+[6.884s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/notandi/ros2_ws/install/setup.sh'
+[6.886s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/notandi/ros2_ws/install/local_setup.bash'
+[6.888s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/notandi/ros2_ws/install/setup.bash'
+[6.889s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/notandi/ros2_ws/install/local_setup.zsh'
+[6.891s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/notandi/ros2_ws/install/setup.zsh'

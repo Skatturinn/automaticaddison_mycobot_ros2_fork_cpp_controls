@@ -1,0 +1,24 @@
+[0.066s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_moveit_config -- -j12 -l12
+[0.233s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_moveit_config -- -j12 -l12
+[0.253s] Invoking command in '/home/notandi/ros2_ws/build/mycobot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_moveit_config
+[0.270s] -- Install configuration: ""
+[0.275s] -- Execute custom install script
+[0.277s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/config/mycobot_280/ros2_controllers.yaml
+[0.280s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/config/mycobot_280/ros2_controllers_template.yaml
+[0.281s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/launch/load_ros2_controllers.launch.py
+[0.281s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/ament_index/resource_index/package_run_dependencies/mycobot_moveit_config
+[0.282s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/ament_index/resource_index/parent_prefix_path/mycobot_moveit_config
+[0.283s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/environment/ament_prefix_path.sh
+[0.283s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/environment/ament_prefix_path.dsv
+[0.285s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/environment/path.sh
+[0.285s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/environment/path.dsv
+[0.286s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/local_setup.bash
+[0.287s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/local_setup.sh
+[0.288s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/local_setup.zsh
+[0.289s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/local_setup.dsv
+[0.289s] -- Symlinking: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.dsv
+[0.315s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/ament_index/resource_index/packages/mycobot_moveit_config
+[0.316s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/cmake/mycobot_moveit_configConfig.cmake
+[0.316s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/cmake/mycobot_moveit_configConfig-version.cmake
+[0.318s] -- Up-to-date symlink: /home/notandi/ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/package.xml
+[0.323s] Invoked command in '/home/notandi/ros2_ws/build/mycobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_moveit_config

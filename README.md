@@ -51,6 +51,12 @@ Added forward command controller to ROS2 controllers for simulation
 ```
 28:def generate_launch_description():
 ...
+34:    # Start arm controller
+35:    start_arm_controller_cmd = ExecuteProcess(
+36:        cmd=['ros2', 'control', 'load_controller', '--set-state', 'inactive',
+37:             'arm_controller'],
+38:        output='screen')
+...
 52:    # NEW Load forward position controller (starts inactive to prevent conflicts)
 53:    start_forward_position_controller_cmd = ExecuteProcess(
 54:        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',

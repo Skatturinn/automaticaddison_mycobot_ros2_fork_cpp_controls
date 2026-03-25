@@ -56,6 +56,12 @@ Added forward command controller to ROS2 controllers for simulation
 54:        cmd=['ros2', 'control', 'load_controller', '--set-state', 'inactive',
 55:             'forward_position_controller'],
 56:        output='screen')
+57:
+58:    # Add delay to joint state broadcaster (if necessary)
+59:    delayed_start = TimerAction(
+60:        period=15.0,  # <- Increaded to allow forward command controller to load
+61:        actions=[start_joint_state_broadcaster_cmd]
+61:    )
 ...
 77:    # NEW Load the forward position controller after launching the gripper controller
 78:    load_forward_position_controller_cmd = RegisterEventHandler(

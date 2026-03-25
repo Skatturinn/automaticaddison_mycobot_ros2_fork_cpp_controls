@@ -1,9 +1,0 @@
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/uninstall.dir
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/mycobot_bringup_uninstall.dir
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/test.dir
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/edit_cache.dir
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/rebuild_cache.dir
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/list_install_components.dir
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/install.dir
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/install/local.dir
-/home/notandi/ros2_ws/build/mycobot_bringup/CMakeFiles/install/strip.dir

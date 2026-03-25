@@ -1,1 +1,0 @@
-/home/notandi/ros2_ws/src/build/mycobot_moveit_config/ament_cmake_core/mycobot_moveit_configConfig-version.cmake

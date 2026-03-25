@@ -1,6 +1,0 @@
-Invoking command in '/home/notandi/ros2_ws/build/mycobot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_bringup -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/install/mycobot_bringup
-Invoked command in '/home/notandi/ros2_ws/build/mycobot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/notandi/ros2_ws/src/mycobot_ros2/mycobot_bringup -DCMAKE_INSTALL_PREFIX=/home/notandi/ros2_ws/install/mycobot_bringup
-Invoking command in '/home/notandi/ros2_ws/build/mycobot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_bringup -- -j12 -l12
-Invoked command in '/home/notandi/ros2_ws/build/mycobot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/notandi/ros2_ws/build/mycobot_bringup -- -j12 -l12
-Invoking command in '/home/notandi/ros2_ws/build/mycobot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_bringup
-Invoked command in '/home/notandi/ros2_ws/build/mycobot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/notandi/ros2_ws/build/mycobot_bringup

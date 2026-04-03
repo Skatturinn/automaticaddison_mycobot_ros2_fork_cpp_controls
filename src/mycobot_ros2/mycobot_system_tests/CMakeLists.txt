@@ -12,11 +12,14 @@ find_package(rclcpp_action REQUIRED)
 find_package(control_msgs REQUIRED)
 
 # Create executable
-add_executable(arm_gripper_loop_controller src/arm_gripper_loop_controller.cpp)
-ament_target_dependencies(arm_gripper_loop_controller rclcpp rclcpp_action control_msgs)
+#add_executable(arm_gripper_loop_controller src/arm_gripper_loop_controller.cpp)
+#ament_target_dependencies(arm_gripper_loop_controller rclcpp rclcpp_action control_msgs)
 
-add_executable(260309_in_out_demo src/260309_in_out_demo.cpp) # Takes the .cpp and makes a program
-ament_target_dependencies(260309_in_out_demo rclcpp rclcpp_action control_msgs) # aments the program to runtime with its dependencies so it can find header files
+#add_executable(260309_in_out_demo src/260309_in_out_demo.cpp) # Takes the .cpp and makes a program
+#ament_target_dependencies(260309_in_out_demo rclcpp rclcpp_action control_msgs) # aments the program to runtime with its dependencies so it can find header files
+
+add_executable(secant src/secant.cpp) # Takes the .cpp and makes a program
+ament_target_dependencies(secant rclcpp rclcpp_action control_msgs) # aments the program to runtime with its dependencies so it can find header files
 
 install (
   DIRECTORY scripts src
@@ -25,8 +28,9 @@ install (
 
 install ( 
   TARGETS
-  arm_gripper_loop_controller
-  260309_in_out_demo # installs the program
+  #arm_gripper_loop_controller
+  #260309_in_out_demo # installs the program
+  secant # installs the program
   DESTINATION lib/${PROJECT_NAME}
   )
 

@@ -10,7 +10,61 @@
 #include "std_msgs/msg/float64_multi_array.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
 using namespace std::chrono_literals;
+
+class controller {
+public
+    protected:
+    class min_max {
+        	double min;
+        	double max;
+    	};
+        std::vector<double> measurements = {};
+        std::vector<double> setpoints = {};
+        std::vector<double> output = {};
+        std::vector<min_max> boundaries;
+        bool initialized = false;
+    public:
+        virtual ~Controller() = default; // to prevent memory leaks from inheritance
+        virtual void compute() = 0; // This will hold the logic and return the output
+        bool init_system( // initialize values
+            const std::vector<double>& new_measurements,
+            const std::vector<double>& new_setpoints,
+            const std::vector<min_max>& new_boundaries
+            ) {
+            if (new_boundaries.size() != new_setpoints.size()) return false; // dimensions must match
+            for (size_t i{};i < new_setpoints.size(); i++) {
+                
+            }
+            // Other checks tbd...
+            // Set new values:
+            measurements = new_measurements;
+            setpoints = new_setpoints;
+            boundaries = new_boundaries;
+            initialized = true;
+            return true;
+        }
+        bool update_system( // update measurements
+            const std::vector<double>& new_measurements
+            ) {
+            if (initialized // must be initialized
+            // || new_measurements.size() != setpoints.size() // dimensions must match
+            ) return false; 
+            // Other checks tbd...
+            // Set new values:
+            measurements = new_measurements;
+            return true;    
+        }
+        double clamp(double val, Bound b) {
+        return std::max(b.min, std::min(val, b.max));
+        }
+};
+
+// using namespace std::chrono_literals;
 
 class in_out_demo : public rclcpp::Node {
 	public:
@@ -18,13 +72,13 @@ class in_out_demo : public rclcpp::Node {
 		
 		in_out_demo() : Node("arm_gripper_loop_controller") {
 	
-			// We publish values to ForwardCommandController
+			// We publish values to ForwardCommandController // OUTPUT
 			forward_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
 				"/forward_position_controller/commands",
 				10
 			);
 			
-			// We subscribe to read current joint states
+			// We subscribe to read current joint states // MEASUREMENTS
 			joint_state_sub_ = this->create_subscription<sensor_msgs::msg::JointState>(
 				"/joint_states",
 				10,
@@ -33,6 +87,8 @@ class in_out_demo : public rclcpp::Node {
 					std::placeholders::_1
 				)
 			);
+			
+			// A node that we read the setpoints from // SETPOINTS
 				
 			// Action client for the gripper
 			gripper_client_ = rclcpp_action::create_client<GripperCommand>(
@@ -73,8 +129,19 @@ class in_out_demo : public rclcpp::Node {
 			auto send_goal_options = rclcpp_action::Client<GripperCommand>::SendGoalOptions();
 			gripper_client_->async_send_goal(goal_msg, send_goal_options);
 		}
+		
+		// We create a new controller class
+		// We set up a compute that puts values into the output vector
 
 		void controlLoopCallback() {
+			// we call jointStateCallBack // need to make sure measurements are in correct order
+			// We call a new functions which listens to the setpoint Node // ToDo where to min and max come from
+			// We call our new controller class
+			// We call controller.init_system(measurements, setpoints, boundaries/minmax);
+			// We call controller.compute(); 
+			// We call sendForwardCommand(controller.getOutputs());
+			// loop, figure out how to make this into a state machine, we need this to be a discrete controller	
+		
 			RCLCPP_INFO(this->get_logger(), "Commanding target position...");
 			sendForwardCommand(target_pos_);
 			std::this_thread::sleep_for(2500ms); 
@@ -85,7 +152,7 @@ class in_out_demo : public rclcpp::Node {
 
 			RCLCPP_INFO(this->get_logger(), "Commanding home position...");
 			sendForwardCommand(home_pos_);
-			std::this_thread::sleep_for(2500ms);
+			std::this_thread::sleep_for(2500ms); // we need to change to state machinne programmi
 
 			RCLCPP_INFO(this->get_logger(), "Opening gripper...");
 			sendGripperCommand(0.0);

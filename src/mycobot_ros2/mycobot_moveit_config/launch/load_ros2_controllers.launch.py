@@ -33,7 +33,7 @@ def generate_launch_description():
     """
     # Start arm controller
     start_arm_controller_cmd = ExecuteProcess(
-        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'inactive',
              'arm_controller'],
         output='screen')
 
@@ -51,7 +51,7 @@ def generate_launch_description():
         
     # NEW Load forward position controller (starts inactive to prevent conflicts)
     start_forward_position_controller_cmd = ExecuteProcess(
-        cmd=['ros2', 'control', 'load_controller', '--set-state', 'inactive',
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
              'forward_position_controller'],
         output='screen')
 

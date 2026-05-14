@@ -1,4 +1,66 @@
+# 5/13/26 - latest
+## 📦 System Requirements & Dependencies
 
+This project is built and tested on **Ubuntu 24.04** running **ROS 2 Jazzy**. 
+
+### 1. Core ROS 2 Packages
+The simulation, kinematics, and data collection pipelines rely on the following ROS 2 packages. Install them via `apt`:
+
+```bash
+sudo apt update
+sudo apt install -y \
+    ros-jazzy-ros2-control \
+    ros-jazzy-ros2-controllers \
+    ros-jazzy-gz-ros2-control \
+    ros-jazzy-moveit \
+    ros-jazzy-moveit-kinematics \
+    ros-jazzy-moveit-ros-planning \
+    ros-jazzy-moveit-ros-move-group \
+    ros-jazzy-rosbag2-storage-mcap \
+    python3-pip
+```
+## C++ Libraries
+Eigen3: Required for advanced matrix operations, cross-coupling, and pseudo-inverse calculations in the custom controllers. (Usually pre-installed with ROS 2 Desktop, but available via sudo apt install libeigen3-dev if missing).
+
+Code Architecture Note: Control Logic
+Important for Future Developers: The core mathematical control logic for the trajectory trackers (including the PID and Secant algorithms) is implemented as Header-Only C++ code.
+
+You will not find standalone .cpp implementation files for the controller math. All control theory logic, system initializations, state updates, and computational algorithms are housed directly within the .hpp header files (located within the nlc_cpp_lib / include directories).
+
+When modifying controller behavior, adjusting safety velocity bounds, or adding new tracking algorithms, look exclusively inside the .hpp files. The standard .cpp files in this repository are strictly used for ROS 2 node wrappers, subscriber/publisher routing, and hardware bridging.
+
+### Workspace Setup
+Clone the repository
+
+```Bash
+mkdir -p ~/ros2_ws/
+cd ~/ros2_ws/
+git clone <repo_url> .
+```
+### Build the workspace
+
+```Bash
+cd ~/ros2_ws
+colcon build --symlink-install
+```
+### Source the environment
+
+```Bash
+source ~/ros2_ws/install/setup.bash
+```
+(Tip: Add source ~/ros2_ws/install/setup.bash to your ~/.bashrc to do this automatically).
+
+### Running the Experiment
+Always use the master bash script to collect data. It automatically synchronizes the simulation clock, boots Gazebo, handles the MoveIt IK streamer, executes the 16-second trajectories, records the ROS bags, and cleanly terminates all background processes.
+
+```Bash
+cd ~/ros2_ws
+chmod +x run_experiment.sh
+./run_experiment.sh
+```
+
+
+# 3/25/26 - Old Update below
 
 # Alias run & build commands
 build and run commands, this assumes you have ros2 setup

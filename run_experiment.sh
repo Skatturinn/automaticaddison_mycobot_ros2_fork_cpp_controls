@@ -46,24 +46,30 @@ for i in $(seq 1 $NUM_RUNS); do
     sleep 3
 
     echo "[Run $i] Recording PID Bag..."
-    ros2 bag record -o "experiment_data/pid_run_$i" /joint_states /controller/joint_setpoints /forward_position_controller/commands --use-sim-time &
+	ros2 bag record -o "experiment_data/pid_run_$i" /joint_states /controller/joint_setpoints /forward_position_controller/commands --use-sim-time &
+    BAG_PID=$!
     sleep 1
-
     echo "[Run $i] Executing Trajectory (Waiting for completion)..."
     python3 ~/ros2_ws/src/mycobot_ros2/mycobot_system_tests/scripts/trajectory_generator.py --ros-args -p use_sim_time:=true
 
     echo "[Run $i] Trajectory finished! Shutting down PID and saving bag..."
-    
+    # FIX 1: Use -2 (SIGINT) for the bag to ensure it saves correctly
+# KILL SEQUENCE
+    kill -2 $BAG_PID   # Tell bag to save
+    kill -9 $CTRL_PID  # Kill PID Controller instantly
+    sleep 2
+    pkill -9 -f "ros2 bag" # Force close bag if it's hanging
     # 1. Gracefully tell the bag daemon to stop via ROS 2 signal
     ros2 daemon stop
     sleep 2 
     
     # 2. Hard kill the controller
-    kill -9 $CTRL_PID 
+
     
     # 3. Guarantee no zombie bag processes remain before starting Secant
     pkill -9 -f "ros2 bag"
     sleep 2 
+    ros2 bag reindex "experiment_data/pid_run_$i"
 	# --- ADD THIS DEAD TIME ---
     echo "======================================================="
     echo " OBSERVE ARM: PID is DEAD. Arm should be completely limp."
@@ -93,6 +99,7 @@ for i in $(seq 1 $NUM_RUNS); do
     kill -9 $CTRL_PID
     pkill -9 -f "ros2 bag"
     sleep 2
+    ros2 bag reindex "experiment_data/secant_run_$i"
     # --- ADD THIS DEAD TIME ---
     echo "======================================================="
     echo " OBSERVE ARM: Secant is DEAD. Arm should be completely limp."

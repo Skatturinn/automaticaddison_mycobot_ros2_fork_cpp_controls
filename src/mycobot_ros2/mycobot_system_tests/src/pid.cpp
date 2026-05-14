@@ -1,3 +1,8 @@
+// Author: el3403
+// Function: This node implements a closed-loop position controller for a 6-DOF robotic arm using a PID control law.
+// Input: Joint states from /joint_states and target setpoints from /controller/joint_setpoints.
+// Output: Calculated position commands published to /forward_position_controller/commands.
+
 #include <chrono>
 #include <map>
 #include <memory>
@@ -26,6 +31,15 @@ class in_out_demo : public rclcpp::Node {
 public:
     using GripperCommand = control_msgs::action::GripperCommand;
     
+    /**
+     * Author: el3403
+     * Pseudo-code:
+     * 1. Initialize the ROS 2 node and set up communication interfaces.
+     * 2. Define the expected joint names for the MyCobot system.
+     * 3. Set velocity safety boundaries (caps) to be used by the controller.
+     * 4. Initialize the PID controller with starting measurements and setpoints.
+     * 5. Start a high-frequency (10Hz) control loop timer.
+     */
     in_out_demo() : Node("arm_gripper_loop_controller") {
         forward_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
             "/forward_position_controller/commands", 10);
@@ -43,22 +57,14 @@ public:
             "link6_to_link6_flange"
         };
 
-        // Static Target
-        //target_pos_ = {1, 1, 1, 1, 0, 0};
-        // Listen to the IK Node
-        // Listen to the IK Node
         setpoint_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
             "/controller/joint_setpoints", 10,
             std::bind(&in_out_demo::setpointCallback, this, std::placeholders::_1));
 
         // Boundaries: These act as VELOCITY caps (rad/s) for safety
         std::vector<controller::min_max> velocity_bounds = {
-            {-1.5, 1.5},
-            {-1.5, 1.5},
-            {-1.5, 1.5},
-            {-1.5, 1.5},
-            {-1.5, 1.5},
-            {-1.5, 1.5}
+            {-1.5, 1.5}, {-1.5, 1.5}, {-1.5, 1.5},
+            {-1.5, 1.5}, {-1.5, 1.5}, {-1.5, 1.5}
         };
         
         target_pos_ = std::vector<double>(6, 0.0);
@@ -72,6 +78,10 @@ public:
     }
 
 private:
+    // Author: el3403
+    // Function: Stores incoming joint positions into a map for easy lookup by name.
+    // Input: sensor_msgs::msg::JointState (Robot feedback)
+    // Output: Updated current_joint_positions_ internal map.
     void jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg) {
         for (size_t i = 0; i < msg->name.size(); ++i) {
             current_joint_positions_[msg->name[i]] = msg->position[i];
@@ -79,6 +89,10 @@ private:
         got_first_state_ = true;
     }
     
+    // Author: el3403
+    // Function: Updates the target trajectory points for the controller.
+    // Input: std_msgs::msg::Float64MultiArray (IK setpoints)
+    // Output: Updated target_pos_ vector and updated internal controller setpoints.
     void setpointCallback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
         if (msg->data.size() == 6) {
             target_pos_ = msg->data;
@@ -92,16 +106,26 @@ private:
         forward_pub_->publish(msg);
     }
 
+    /**
+     * Author: el3403
+     * Pseudo-code:
+     * 1. Check if both current state and IK setpoints are available.
+     * 2. Gather current joint measurements in the correct order.
+     * 3. Execute PID control logic to determine optimal joint velocities.
+     * 4. Perform numerical integration: command = previous_command + (velocity * dt).
+     * 5. Apply safety clamping to stay within physical hardware limits (+/- 3.14 rad).
+     * 6. Publish the final integrated position commands to the hardware bridge.
+     */
     void controlLoopCallback() {
         if (!got_first_state_) {
             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "Waiting for joint states...");
             return;
         }
-        // NEW: Wait for the IK Streamer to send a target
-	    if (target_pos_.empty()) {
-		RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "Waiting for IK setpoint...");
-		return;
-	    }
+
+        if (target_pos_.empty()) {
+            RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "Waiting for IK setpoint...");
+            return;
+        }
 
         std::vector<double> current_meas;
         for (const auto& name : joint_names_) {
@@ -146,9 +170,8 @@ private:
 
     std::vector<double> target_pos_;
     
-    // Instantiating the new PID Controller with Kp=1.0, Ki=0.01, Kd=0.05, and Ts=0.1s
-    //pid_controller my_controller{1.0, 0, 0.05, 0.1}; 
-    // K=0.5, Ti=0.0, Td=0.05, N=10.0, b=1.0, Tt=0.5, Ts=0.1
+    // PID configuration: K=0.5, Ti=0.0, Td=0.075, N=10.0, b=1.0, Tt=0.5, Ts=0.1
+    // Author: el3403
     pid_controller my_controller{0.5, 0.0, 0.075, 10.0, 1.0, 0.5, 0.1};
     
     std::vector<double> current_cmd_pos_;

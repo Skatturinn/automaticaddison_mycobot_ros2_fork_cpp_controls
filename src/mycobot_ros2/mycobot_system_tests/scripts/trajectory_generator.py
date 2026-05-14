@@ -1,9 +1,24 @@
+# Author: el3403
+# Function: This script generates a timed trajectory sequence for a robotic end-effector.
+# Input: ROS2 System Clock and predefined pose constants.
+# Output: Publishes geometry_msgs/Pose targets to the '/end_effector_target' topic.
+
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Pose
 import math
 
 class TrajectoryGenerator(Node):
+    """
+    Author: el3403
+    Pseudo-code:
+    1. Define 'Zero' and 'Safe' Cartesian poses.
+    2. Start a state machine once the ROS clock synchronizes.
+    3. Phase 1 (Move-In): Use cosine interpolation to smoothly move from Zero to Safe pose.
+    4. Phase 2 (Experiment): Oscillate the Z-axis using a sine wave for a fixed duration.
+    5. Phase 3 (Move-Out): Smoothly interpolate from the current position back to the Zero pose.
+    6. Publish the calculated pose at 20Hz and shut down once the sequence is complete.
+    """
     def __init__(self):
         super().__init__('trajectory_generator')
         self.publisher_ = self.create_publisher(Pose, '/end_effector_target', 10)
@@ -24,6 +39,10 @@ class TrajectoryGenerator(Node):
         self.t_move_out = 3.0
         self.t_total = self.t_move_in + self.t_experiment + self.t_move_out
 
+    # Author: el3403
+    # Function: Timer callback to calculate and publish the target pose.
+    # Input: None (Triggered by ROS2 timer).
+    # Output: Published Pose message.
     def timer_callback(self):
         if self.start_time is None:
             if self.get_clock().now().nanoseconds == 0:
@@ -44,6 +63,7 @@ class TrajectoryGenerator(Node):
         
         if t <= self.t_move_in:
             # PHASE 1: Smoothly interpolate from Zero to Safe
+            # Author: el3403 - Implementing cosine s-curve for velocity ramping
             progress = t / self.t_move_in
             smooth_p = (1 - math.cos(progress * math.pi)) / 2.0
             
@@ -53,6 +73,7 @@ class TrajectoryGenerator(Node):
             
         elif t <= (self.t_move_in + self.t_experiment):
             # PHASE 2: Execute Sine Wave
+            # Author: el3403 - Generating vertical oscillation for experiment testing
             t_exp = t - self.t_move_in
             amplitude = 0.04
             offset = self.s_z - amplitude

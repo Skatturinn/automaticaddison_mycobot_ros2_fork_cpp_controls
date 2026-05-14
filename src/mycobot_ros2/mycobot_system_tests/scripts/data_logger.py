@@ -38,8 +38,22 @@ class DataLogger(Node):
         self.get_logger().info(f"Logging data to {self.filename}")
 
     def actual_cb(self, msg):
-        self.current_actual = msg.position
-
+        # The exact names from your controllers.yaml
+        joint_names = [
+            'link1_to_link2',
+            'link2_to_link3',
+            'link3_to_link4',
+            'link4_to_link5',
+            'link5_to_link6',
+            'link6_to_link6_flange'
+        ]
+        
+        # Search the message for the correct joint name and grab its specific position
+        for i, name in enumerate(joint_names):
+            if name in msg.name:
+                idx = msg.name.index(name)
+                self.current_actual[i] = msg.position[idx]
+                
     def target_cb(self, msg):
         self.current_target = msg.data
 

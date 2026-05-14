@@ -7,7 +7,7 @@ Panels:
         - /RobotModel1
         - /TF1
       Splitter Ratio: 0.5
-    Tree Height: 326
+    Tree Height: 336
   - Class: rviz_common/Views
     Expanded:
       - /Current View1
@@ -57,6 +57,43 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        camera_head_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_head_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_head_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_head_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_head_infra1_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_head_infra1_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_head_infra2_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_head_infra2_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_head_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         gripper_base:
           Alpha: 1
           Show Axes: false
@@ -123,6 +160,11 @@ Visualization Manager:
           Show Trail: false
           Value: true
         link6_flange:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        torso_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -148,6 +190,24 @@ Visualization Manager:
         All Enabled: true
         base_link:
           Value: true
+        camera_head_color_frame:
+          Value: true
+        camera_head_color_optical_frame:
+          Value: true
+        camera_head_depth_frame:
+          Value: true
+        camera_head_depth_optical_frame:
+          Value: true
+        camera_head_infra1_frame:
+          Value: true
+        camera_head_infra1_optical_frame:
+          Value: true
+        camera_head_infra2_frame:
+          Value: true
+        camera_head_infra2_optical_frame:
+          Value: true
+        camera_head_link:
+          Value: true
         gripper_base:
           Value: true
         gripper_left1:
@@ -175,6 +235,8 @@ Visualization Manager:
         link6:
           Value: true
         link6_flange:
+          Value: true
+        torso_link:
           Value: true
         world:
           Value: true
@@ -204,6 +266,20 @@ Visualization Manager:
                             gripper_right3:
                               gripper_right1:
                                 {}
+            torso_link:
+              camera_head_link:
+                camera_head_color_frame:
+                  camera_head_color_optical_frame:
+                    {}
+                camera_head_depth_frame:
+                  camera_head_depth_optical_frame:
+                    {}
+                camera_head_infra1_frame:
+                  camera_head_infra1_optical_frame:
+                    {}
+                camera_head_infra2_frame:
+                  camera_head_infra2_optical_frame:
+                    {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -247,9 +323,9 @@ Window Geometry:
   Height: 855
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000001cb000002f9fc0200000002fb000000100044006900730070006c006100790073010000003f000001cc000000cc00fffffffb0000000a00560069006500770073010000021100000127000000a900ffffff00000445000002f900000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000001cb00000301fc0200000002fb000000100044006900730070006c006100790073010000003b000001d1000000c700fffffffb0000000a0056006900650077007301000002120000012a000000a000ffffff000004450000030100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1558
-  X: 334
-  Y: 35
+  X: 285
+  Y: 91

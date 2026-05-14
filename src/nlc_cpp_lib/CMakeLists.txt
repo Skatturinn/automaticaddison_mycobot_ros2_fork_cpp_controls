@@ -1,0 +1,44 @@
+cmake_minimum_required(VERSION 3.8)
+project(nlc_cpp_lib)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+# 1. Create a header-only library target
+add_library(${PROJECT_NAME} INTERFACE)
+
+# 2. Tell the system where the headers are
+target_include_directories(${PROJECT_NAME} INTERFACE
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
+# 3. Link dependencies
+target_link_libraries(${PROJECT_NAME} INTERFACE Eigen3::Eigen)
+
+# 4. Export to the global ROS 2 workspace
+install(DIRECTORY include/ DESTINATION include)
+ament_export_include_directories(include)
+ament_export_dependencies(Eigen3)
+
+
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_package()

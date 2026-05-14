@@ -10,6 +10,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(control_msgs REQUIRED)
+find_package(Eigen3 REQUIRED)
+find_package(nlc_cpp_lib REQUIRED) # Our lab specific library
+find_package(geometry_msgs REQUIRED)
+find_package(moveit_core REQUIRED)
+find_package(moveit_ros_planning_interface REQUIRED)
 
 # Create executable
 #add_executable(arm_gripper_loop_controller src/arm_gripper_loop_controller.cpp)
@@ -19,26 +24,34 @@ find_package(control_msgs REQUIRED)
 #ament_target_dependencies(260309_in_out_demo rclcpp rclcpp_action control_msgs) # aments the program to runtime with its dependencies so it can find header files
 
 add_executable(secant src/secant.cpp) # Takes the .cpp and makes a program
-ament_target_dependencies(secant rclcpp rclcpp_action control_msgs) # aments the program to runtime with its dependencies so it can find header files
+ament_target_dependencies(secant rclcpp rclcpp_action control_msgs nlc_cpp_lib std_msgs sensor_msgs) # aments the program to runtime with its dependencies so it can find header files
+target_link_libraries(secant Eigen3::Eigen)
 
-install (
-  DIRECTORY scripts src
-  DESTINATION share/${PROJECT_NAME}
+add_executable(pid src/pid.cpp) #
+ament_target_dependencies(pid rclcpp rclcpp_action control_msgs nlc_cpp_lib std_msgs sensor_msgs) #
+target_link_libraries(pid Eigen3::Eigen)#
+
+add_executable(ik_streamer_node src/ik_streamer_node.cpp)
+ament_target_dependencies(ik_streamer_node 
+  rclcpp 
+  geometry_msgs 
+  std_msgs 
+  moveit_core 
+  moveit_ros_planning_interface
 )
 
-install ( 
-  TARGETS
-  #arm_gripper_loop_controller
-  #260309_in_out_demo # installs the program
-  secant # installs the program
+install(TARGETS pid ik_streamer_node secant
   DESTINATION lib/${PROJECT_NAME}
-  )
-
+)
 install (
   PROGRAMS
   scripts/arm_gripper_loop_controller.py
   DESTINATION lib/${PROJECT_NAME}
   )
+  
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 

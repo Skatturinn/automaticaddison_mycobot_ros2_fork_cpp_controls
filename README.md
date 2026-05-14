@@ -1,5 +1,5 @@
 # 5/13/26 - latest
-## 📦 System Requirements & Dependencies
+## System Requirements & Dependencies
 
 This project is built and tested on **Ubuntu 24.04** running **ROS 2 Jazzy**. 
 

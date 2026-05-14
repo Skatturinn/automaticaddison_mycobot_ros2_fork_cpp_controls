@@ -1,3 +1,8 @@
+// Author: el3403
+// Function: This node implements a closed-loop position controller for a 6-DOF robotic arm.
+// Input: Joint states from /joint_states and target setpoints from /controller/joint_setpoints.
+// Output: Calculated position commands published to /forward_position_controller/commands.
+
 #include <chrono>
 #include <map>
 #include <memory>
@@ -25,6 +30,14 @@ class in_out_demo : public rclcpp::Node {
 public:
     using GripperCommand = control_msgs::action::GripperCommand;
     
+    /*
+     * Author: el3403
+     * Pseudo-code:
+     * 1. Initialize publishers for hardware commands and subscribers for joint states/setpoints.
+     * 2. Define the 6-DOF joint names and safety velocity bounds.
+     * 3. Initialize the 'secant' controller with zeroed states and bounds.
+     * 4. Start a wall timer to execute the control loop at 10Hz.
+     */
     in_out_demo() : Node("arm_gripper_loop_controller") {
         forward_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
             "/forward_position_controller/commands", 10);
@@ -36,7 +49,7 @@ public:
         setpoint_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
             "/controller/joint_setpoints", 10,
             std::bind(&in_out_demo::setpointCallback, this, std::placeholders::_1));
-        
+            
         joint_names_ = {
             "link1_to_link2", 
             "link2_to_link3", 
@@ -46,29 +59,26 @@ public:
             "link6_to_link6_flange"
         };
 
-        // Static Target
-        // target_pos_ = {1.345, -1.23, 0.264, -0.296, 0.389, -1.5};
-        //target_pos_ = {0, 0, 0, 0, 0, 0};
         target_pos_ = std::vector<double>(6, 0.0);
+
         // Boundaries: These act as VELOCITY caps (rad/s) for safety
         std::vector<controller::min_max> velocity_bounds = {
-            {-1.5, 1.5},
-            {-1.5, 1.5},
-            {-1.5, 1.5},
-            {-1.5, 1.5},
-            {-1.5, 1.5},
-            {-1.5, 1.5}
+            {-1.5, 1.5}, {-1.5, 1.5}, {-1.5, 1.5},
+            {-1.5, 1.5}, {-1.5, 1.5}, {-1.5, 1.5}
         };
         
         std::vector<double> dummy_meas(6, 0.0);
         my_controller.init_system(dummy_meas, target_pos_, velocity_bounds);
 
-        // Control loop runs at 10Hz (Ts = 0.1s)
         timer_ = this->create_wall_timer(
             100ms, std::bind(&in_out_demo::controlLoopCallback, this));
     }
 
 private:
+    // Author: el3403
+    // Function: Parses the incoming JointState message and maps positions to joint names.
+    // Input: sensor_msgs::msg::JointState
+    // Output: Updates current_joint_positions_ map.
     void jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg) {
         for (size_t i = 0; i < msg->name.size(); ++i) {
             current_joint_positions_[msg->name[i]] = msg->position[i];
@@ -76,7 +86,11 @@ private:
         got_first_state_ = true;
     }
     
-	void setpointCallback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+    // Author: el3403
+    // Function: Updates the controller's internal target setpoints.
+    // Input: std_msgs::msg::Float64MultiArray (6 doubles)
+    // Output: Updated controller setpoints.
+    void setpointCallback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
         if (msg->data.size() == 6) {
             target_pos_ = msg->data;
             my_controller.update_setpoints(target_pos_);
@@ -89,6 +103,16 @@ private:
         forward_pub_->publish(msg);
     }
 
+    /*
+     * Author: el3403
+     * Pseudo-code:
+     * 1. Validate that joint state data has been received.
+     * 2. Extract current joint positions in the specific order required by the controller.
+     * 3. Pass measurements to the secant controller and compute the optimal joint velocities.
+     * 4. Perform numerical integration: New Position = Current Position + (Velocity * TimeStep).
+     * 5. Clamp the resulting position commands to +/- 3.14 radians for safety.
+     * 6. Publish the final position vector to the hardware bridge.
+     */
     void controlLoopCallback() {
         if (!got_first_state_) {
             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "Waiting for joint states...");
@@ -130,7 +154,6 @@ private:
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr forward_pub_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_sub_;
     rclcpp::TimerBase::SharedPtr timer_;
-    // ADD THIS LINE:
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr setpoint_sub_;
 
     std::vector<std::string> joint_names_;
